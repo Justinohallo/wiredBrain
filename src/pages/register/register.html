@@ -7,12 +7,26 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>register</ion-title>
+    <ion-title>Register an Account </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-item>
+    <ion-label color="danger"> Email Address </ion-label>
+    <ion-input type='email' [(ngModel)]='reg.email' name='email'> </ion-input>
+  </ion-item>
+
+<ion-item>
+  <ion-label color='danger'>  Password </ion-label>
+  <ion-input type='password' [(ngModel)]="reg.passWrd1" name='passWrd1'></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label color='danger'>  Confirm Password </ion-label>
+    <ion-input type='password' [(ngModel)]="reg.passWrd1" name='passWrd1'></ion-input>
+  </ion-item>
 
 </ion-content>
