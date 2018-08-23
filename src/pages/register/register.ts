@@ -35,7 +35,7 @@ export class RegisterPage {
 
   displayAlert(alertTile, alertSub){
     let theAlert = this.alertCtrl.create({
-      title: alertTitle,
+      title: alertTile,
       subTitle: alertSub,
       buttons:['OK']
     })
