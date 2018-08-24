@@ -17,7 +17,18 @@
   <ion-toolbar>
       <ion-title>Sign into App</ion-title>
   </ion-toolbar>
-  <button ion-button color='secondary'> Sign in</button>
+
+  <ion-item>
+    <ion-label color='danger'> Email Address</ion-label>
+    <ion-input type='email' [(ngModel)]="login.email" name='email'></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color='danger'>  Password </ion-label>
+      <ion-input type='password' [(ngModel)]="login.passWrd" name='passWrd'></ion-input>
+    </ion-item>
+
+  <button ion-button color='secondary' (click)="signOn()"> Sign in</button>
   <p> Register a free account to receive rewards from the app</p>
   <button ion-button color='danger' [navPush]='regPage'> Create an account </button>
 
